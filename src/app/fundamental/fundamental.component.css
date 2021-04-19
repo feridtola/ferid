@@ -1,0 +1,123 @@
+  
+  #navbar {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: right;
+    text-decoration: none;
+    border-radius: 10px;
+    font-family: "Courier New", cursive;
+
+  }
+  
+  #navbar a:hover {
+    background-color: rgb(87, 81, 81);
+    border-radius: 10px;
+  }
+  .navbar-nav {
+    margin-left: auto;
+}
+
+  .nav-link{
+    text-align: right;
+    
+  }
+  
+  .image {
+    display: block;
+    margin: auto;
+    width: 30%;
+    padding-bottom: 2%;
+  }
+  
+  #instagram{
+
+    margin-right: 10px;
+  }
+
+  .begin :first-letter{
+   
+    color: #cecad2;
+  }
+ 
+  .section{
+    padding-top: 5%;
+
+    margin-left: 12%;
+    margin-right: 12%;
+  }
+  
+  
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+
+  .begin{
+    text-align: justify;
+    text-justify:inter-ideograph ;
+    hyphens: auto;
+    margin: auto;
+
+  }
+  .text{
+    hyphens: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: justify;
+    text-justify:inter-ideograph ;
+    hyphens: auto;
+
+  }
+
+  .inner {
+    text-align: justify;
+    text-justify:inter-ideograph ;
+    hyphens: auto;
+
+  
+  }
+  
+  
+  h1 {
+    color: rgb(252, 245, 245);
+    text-align: center;
+    margin-top: 40px;
+}
+
+  h2 {
+      color: rgb(252, 245, 245);
+      text-align: center;
+      margin-top: 40px;
+  }
+  h5 {
+    color: rgb(252, 245, 245);
+    text-align: center;
+    margin-bottom: 20px;
+}
+h6 {
+    color: rgb(216, 209, 209);
+    text-align: left;
+} 
+.backbutton {
+    text-align: center;
+}
+
+.social {
+    text-align: center;
+}

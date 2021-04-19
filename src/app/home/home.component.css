@@ -1,0 +1,265 @@
+html{
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+body{
+  --scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+  #navbar {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.9;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    z-index: 9;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  /* Style the navbar links */
+  #navbar a {
+    float: right;
+    display: block;
+    color: white;
+    text-align: left;
+    text-decoration:solid;
+    border-radius: 10px;
+    font-family: "Courier New", cursive;
+    scroll-behavior: smooth !important;
+
+  }
+  
+  
+  #navbar a:hover {
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    
+  }
+
+  .nav-link{
+    text-align: left;    
+  }
+  .img{
+    margin-top: 10%;
+  }
+
+
+  #top{
+    background-color: #000000;
+
+  }
+
+ 
+  .ca3-scroll-down-arrow {
+    background-image: url(assets/arrowicon.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: rgba(247, 247, 247, 0.728);
+    opacity: 0.2;
+  }
+  
+  .ca3-scroll-down-link {
+    border-radius: 50px;
+    cursor:pointer;
+    height: 40px;
+    width: 40px;
+    margin: 0px 0 0 -40px;
+    line-height: 60px;
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    color: #FFF;
+    text-align: center;
+    font-size: 70px;
+    z-index: 100;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4);
+  
+    -webkit-animation: ca3_fade_move_down 2s ease-in-out infinite;
+    -moz-animation:    ca3_fade_move_down 2s ease-in-out infinite;
+    animation:         ca3_fade_move_down 2s ease-in-out infinite;
+  }
+  
+  
+  /*animated scroll arrow animation*/
+  @-webkit-keyframes ca3_fade_move_down {
+    0%   { -webkit-transform:translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -webkit-transform:translate(0,20px); opacity: 0; }
+  }
+  @-moz-keyframes ca3_fade_move_down {
+    0%   { -moz-transform:translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { -moz-transform:translate(0,20px); opacity: 0; }
+  }
+  @keyframes ca3_fade_move_down {
+    0%   { transform:translate(0,-20px); opacity: 0;  }
+    50%  { opacity: 1;  }
+    100% { transform:translate(0,20px); opacity: 0; }
+  }
+
+  /* DEMO-SPECIFIC STYLES */
+
+  
+  h5 {
+    font-family: "space-mono", monospace;
+    letter-spacing: -1px;
+    line-height: 1.8;
+    font-size: 18px;
+    }
+
+    .typed {
+      padding-bottom: 4px;
+      color: #8F9BA8;
+      font-style: italic;
+      }
+      
+  .break {
+    display: none;
+    }
+
+  .link {
+    border-bottom: 1px solid rgba(143, 155, 168, 0.4);
+    font-family: inherit;
+    padding-bottom: 4px;
+    font-size: inherit;
+    display: inline;
+    color: inherit;
+    }
+
+  .h3{
+    text-align: justify;
+    text-justify:inter-ideograph ;
+    hyphens: auto;
+  }
+ 
+#img{
+  left: 50%;
+  opacity: 0.5;
+}
+
+  #home {
+  margin-top: 5%;
+  }
+#resume{
+  border-radius: 12px;
+  border: 2px solid rgb(215, 155, 155);
+}
+  #button {
+    border-radius: 12px;
+    border: 2px solid rgb(215, 155, 155);
+    width: 50%;
+    text-align: center;
+  }
+
+  #instagram{
+
+    margin-right: 10px;
+  }
+
+  .text{
+    text-align: justify;
+    text-justify:inter-ideograph ;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    hyphens: auto;
+  }
+
+  #imgs{
+    border: 2px solid rgb(220, 197, 197);
+  }
+
+.top{
+    text-align: center;
+}
+#projects{
+  text-align: center;
+}
+
+#student {
+  font-family: "Courier New", cursive;
+  font-size: large;
+}
+.p1{
+  font-family:"Courier New", cursive;
+  font-size: medium;
+  text-align: justify;
+  text-justify:inter-ideograph ;
+  hyphens: auto;
+}
+
+
+
+.fade-in {
+  animation: fadeIn ease 1s;
+  -webkit-animation: fadeIn ease 1s;
+  -moz-animation: fadeIn ease 1s;
+  -o-animation: fadeIn ease 1s;
+  -ms-animation: fadeIn ease 1s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:0.7;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:0.8;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:0.7;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:0.7;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:0.7;
+}
+}
+*{
+  scroll-behavior: smooth !important;
+  }
+
+
+  .carousel {
+    position: relative;
+    }
+
+    #photo {
+      float: left;
+      width:  450px;
+      height: 450px;
+      object-fit:fill;
+  }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset= "UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/ionicons/css/ionicons.min.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/law-icons/font/flaticon.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/fonts/fontawesome/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick-theme.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/helpers.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/style.css">
+
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+</style>
+<body class="w3-black" data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+  <!--Start Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light w3-animate-right navlist-right  "  id="navbar">
+  <div class="container">
+    <a class="navbar-brand d-lg-none" href="index.html">Ferid Tola</a> <!--hier statt "index.html, eventuell Home oder #" -> beachte außerdem die nächste Zeile: aria-expanded wurde auf von false auf true gesetzt, damit navbar beim anklicken wieder zu gehet,schau dazu die methode NavBar()-->
+    <button class="navbar-toggler d-block d-sm-none"   (click)="toggleNavbar()" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> 
+    </button>
+    <div class="collapse navbar-collapse "  [ngClass]="{ 'show': navbarOpen }" id="onright">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#" (click)= " NavBar()" >Home </a></li>
+        <li class="nav-item"><a class="nav-link" href="#service" (click)= " NavBar()">Service</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog" (click)= " NavBar()">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" (click)= " NavBar()">Contact</a></li>        
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+<!--End Navbar-->
+<!--Start first section-->
+<section class="section " >
+        <h1>What is a breakout?</h1>
+        <div class ="begin" >
+        <p> Breakout trading is used by active traders to take a position within a trend's early stages. This strategy can be the starting point for major price moves, expansions in volatility and, when managed properly, can offer limited downside risk. A breakout is a stock price moving outside a defined support or resistance level with increased volume. </p>
+        </div>
+
+        <h2>Breakout strategies</h2>
+        <p class = "p1">A breakout trader takes a long position after the stock price rises above the resistance or a short position after the stock falls below the support.</p>
+        
+        <div class ="text">
+          <div class= "inner">
+
+        <ul >
+            <li>Long position (bullish posture):</li> <p> Taking a long position, or going long, generally refers to an investor owning an asset — like a stock — because they believe it will appreciate. So the trader buys a stock at a cheaper price with the hope that it will rise in the future. This behavior is also known as the "bullish attitude".</p>
+            <li>Short position (bear stance):</li> <p>A short position is the opposite of a long position. It represents a pessimistic view. A long position involves outright ownership — buying a stock (or an option to buy a stock) that you expect to be worth more in the future. Taking a short position, aka short selling or shorting a stock — involves selling a stock you don't actually own that you expect to drop in price later.
+            Instead of buying the stock, you borrow it (and pay margin interest on the loan), sell it, and put the money aside. After the price has dropped, you buy the stock back and return it to the original owner, keeping the difference as profit. </p>            
+            <p>Once the stock trades past the price limit, volatility tends to increase and prices usually tend in the direction of the breakout. The reason breakouts are such an important trading strategy is because these setups are the starting point for future volatility spikes, large price swings and, in many circumstances, large price trends.</p>
+            <p>When trading breakouts, it is important to consider the support and resistance levels of the underlying stock. The more times a stock price has touched these areas, the more valid these levels are and the more important they become. At the same time, the longer these levels of support and resistance are in play, the better the result when the share price finally breaks out.</p>
+        </ul>
+      </div>
+    </div>
+  </section>
+<!--end first section-->
+
+
+<!--second section-->
+<section class="section" >
+    <h2>Entry and exit points</h2>
+    
+    <div class ="text">
+      <div id = "inner">
+    <ul>
+        <li>Entry points:</li>
+        <p>As soon as prices are above a resistance level, an investor will take a bullish position, so he will take a long position. If prices are below support levels, an investor will take a bearish position. If an investor acts too quickly or without confirmation of the breakout, there is no guarantee that prices will continue to break new ground. It is therefore important to wait for the pullback to occur in order to protect against so-called "fakeouts". So you wait for the price to bounce off the former resistance level, confirming the breakout.</p>
+        <li>Exit points:</li>
+        <p>Exits are an essential part of a successful trade. When trading with breakouts, possible exit points must also be planned before building a position. If a trade fails, it is important to exit the trade quickly. If one is not careful, losses can accumulate. In the event of an exit, it is important to define an exit target price.</p>
+        <p>When planning target prices, you should consider the current behavior of the stock to determine an appropriate target. When trading price patterns, it is easy to use the most recent price action to set a target price. After your target price is reached, you can leave the position completely or only part of the position and let the rest run, or you can place a stop-loss order to secure profits. Stop-loss orders can also protect a position and prevent the trade from taking too much downside risk.</p>
+    </ul>
+      </div>
+  </div>
+  </section>  
+<!-- end second section-->
+
+    <div class="backbutton">
+    <a href="#blog" class="w3-button w3-light-black w3-padding-large w3-center w3-margin-bottom "  ><i class="fa fa-arrow-left w3-margin-right"></i>Go to Blog</a>
+    </div>
+
+    <div class="social">
+        <a href ="https://www.instagram.com/feridtola/?hl=de" > <i class="fa fa-instagram w3-hover-opacity w3-xxlarge w3-text-white" id = "instagram"> </i></a>
+        <a href="https://de.linkedin.com/in/ferid-tola10"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge w3-text-white" ></i></a>
+      </div>
+ <footer>
+  <div class="w3-content w3-padding-64 w3-text-white w3-small">
+    <p class="pb_font-14">&copy; 2021 <a href="https://feridtola.com/">feridtola.com</a>. All Rights Reserved. Designed by <a href="https://feridtola.com/">Ferid Tola</a></p>
+    <a href="/imprint">Imprint</a>
+    </div>
+</footer>
+
+</body>
+</html>

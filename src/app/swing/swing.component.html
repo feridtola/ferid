@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/ionicons/css/ionicons.min.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/law-icons/font/flaticon.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/fonts/fontawesome/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick-theme.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/helpers.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/style.css">
+
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+</style>
+<body class="w3-black" data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+  <!--Start Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light w3-animate-right navlist-right  "  id="navbar">
+  <div class="container">
+    <a class="navbar-brand d-lg-none" href="index.html">Ferid Tola</a> <!--hier statt "index.html, eventuell Home oder #" -> beachte außerdem die nächste Zeile: aria-expanded wurde auf von false auf true gesetzt, damit navbar beim anklicken wieder zu gehet,schau dazu die methode NavBar()-->
+    <button class="navbar-toggler d-block d-sm-none"   (click)="toggleNavbar()" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> 
+    </button>
+    <div class="collapse navbar-collapse "  [ngClass]="{ 'show': navbarOpen }" id="onright">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#" (click)= " NavBar()" >Home </a></li>
+        <li class="nav-item"><a class="nav-link" href="#service" (click)= " NavBar()">Service</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog" (click)= " NavBar()">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" (click)= " NavBar()">Contact</a></li>        
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+<!--End Navbar-->
+<!--Start first section-->
+
+<section class="section " >
+    <h1>Swing Trading,</h1>
+<div class="beg">
+<p> is a trading methodology that seeks to capture a swing (or “one move”) in the markets.
+  The idea is to endure as “little pain” as possible by exiting your trades before the opposing pressure comes in.
+  This means you’ll book your profits before the market reverse and wipe out your gains. Swing trading positions are typically held for a few days to several weeks, but can be held for longer periods of time. Swing trading is one of the few trading approaches that’s suitable for the retail trader  </p>
+</div>
+        <h5>Strategy 1: Stuck in a box</h5>
+        <p class = "p1">Stuck in a Box identifies a range market and waits for the price to drop below support. You want to take profits before the resistance level is reached, which increases the likelihood of a successful trade.</p>
+        
+        <div class ="text">
+          <div class= "inner">
+        <ul >
+            <p>That´s how it works:</p>
+            <li>Identify a range market.</li> 
+            <li>Wait until the price is below the support.</li> 
+            <li>If the price is below support, then wait for a strong price rejection (a close above Support)</li> 
+            <li>If there’s a strong price rejection, then go long on the next candle open</li> 
+            <li>Set a stop loss on an avarage true range (ATR) below the candlestick low and take profits before Resistance.</li>             
+        </ul>
+      </div>
+    </div>
+  </section>
+<!--end first section-->
+
+
+<!--second section-->
+<section class="section1 " >
+
+    <h5>Strategy 2: Catch the Wave</h5>
+    <p class = "p1">The aim of this strategy is to capture the "one move" in trending markets (like a surfer trying to catch the wave). If a surfer wants to ride a wave that allows them to do great tricks, they need to catch the right one and know when to move. The idea here is to enter after a pullback has ended. Once the trend changes, the trend towards greater investment withdrawal brings greater opportunities for profit. It is recommended to look for trends with 50 MA (moving average).</p>
+    
+    <div class ="text">
+      <div class= "inner">
+    <ul >
+        <p>Now, let’s see how to catch the wave with this strategy:</p>
+        <li>If the market approaches the moving average, then wait for a bullish price rejection.</li> 
+        <li>If there’s a bullish price rejection, then go long on next candle.</li> 
+        <li>Set your stop loss 1 ATR below the low and take profits just before the swing high.</li> 
+    </ul>
+  </div>
+</div>
+</section>
+<!-- end second section-->
+<!-- start third section-->
+<section class="section1 " >
+    <h5>Strategy 3: Fade the Move</h5>
+    <p class = "p1">With this strategy, a trader will sell and expect the momentum to weaken in an uptrend. Basically, this strategy acts against the trend (also known as counter-trend).</p>
+    
+    <div class ="text">
+      <div class= "inner">
+    <ul >
+        <p>That´s how it works:</p>
+        <li>Identify a range market.</li> 
+        <li>Identify a strong momentum move into Resistance that takes out the previous high.</li> 
+        <li>Look for a strong price rejection as the candle forms a strong bearish close</li> 
+        <li>Go short on the next candle and set your stop loss 1 ATR above the highs</li> 
+        <li>Take profits before the nearest swing low.</li>
+    </ul>
+  </div>
+</div>
+</section>
+
+
+
+    <div class="backbutton">
+    <a href="#blog" class="w3-button w3-light-black w3-padding-large w3-center w3-margin-bottom "  ><i class="fa fa-arrow-left w3-margin-right"></i>Go to Blog</a>
+    </div>
+
+    <div class="social">
+        <a href ="https://www.instagram.com/feridtola/?hl=de" > <i class="fa fa-instagram w3-hover-opacity w3-xxlarge w3-text-white" id = "instagram"> </i></a>
+        <a href="https://de.linkedin.com/in/ferid-tola10"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge w3-text-white" ></i></a>
+      </div>
+ <footer>
+  <div class="w3-content w3-padding-64 w3-text-white w3-small">
+    <p class="pb_font-14">&copy; 2021 <a href="https://feridtola.com/">feridtola.com</a>. All Rights Reserved. Designed by <a href="https://feridtola.com/">Ferid Tola</a></p>
+    <a href="/imprint">Imprint</a>
+    </div>
+</footer>
+
+</body>
+</html>

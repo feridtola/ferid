@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/ionicons/css/ionicons.min.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/law-icons/font/flaticon.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/fonts/fontawesome/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick-theme.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/helpers.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/style.css">
+
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+</style>
+<body class="w3-black" data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+  <!--Start Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light w3-animate-right navlist-right  "  id="navbar">
+  <div class="container">
+    <a class="navbar-brand d-lg-none" href="index.html">Ferid Tola</a> <!--hier statt "index.html, eventuell Home oder #" -> beachte außerdem die nächste Zeile: aria-expanded wurde auf von false auf true gesetzt, damit navbar beim anklicken wieder zu gehet,schau dazu die methode NavBar()-->
+    <button class="navbar-toggler d-block d-sm-none"   (click)="toggleNavbar()" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> 
+    </button>
+    <div class="collapse navbar-collapse "  [ngClass]="{ 'show': navbarOpen }" id="onright">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#" (click)= " NavBar()" >Home </a></li>
+        <li class="nav-item"><a class="nav-link" href="#service" (click)= " NavBar()">Service</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog" (click)= " NavBar()">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" (click)= " NavBar()">Contact</a></li>        
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+<!--End Navbar-->
+<!--Start first section-->
+<section class="section " >
+        <h1>Technical analysis</h1>
+     
+        <p>Technical analysis is a means of examining and predicting price movements in the financial markets, by using historical price charts and market statistics. It is based on the idea that if a trader can identify previous market patterns, they can form a fairly accurate prediction of future price trajectories.</p>
+  
+
+  
+        <h5>How to Use Technical Analysis?</h5>
+        <p>The core principle underlying technical analysis is that the market price reflects all available information that could impact a market. As a result, there's no need to look at economic, fundamental, or new developments since they're already priced into a given security. Technical analysts generally believe that prices move in trends and history tends to repeat itself when it comes to the market's overall psychology. The two major types of technical analysis are chart (Candlestick Pattern) patterns and technical (statistical) indicators.</p>
+        <img src="assets/tech.png" alt="Ferid" class="image" style="height: auto; width: 100%">
+
+        <p>Candlesticks are graphical representations of price movements for a given period of time. They are commonly formed by the opening, high, low, and closing prices of a financial instrument.</p>
+        
+
+  </section>
+<!--end first section-->
+<!--start second section-->
+<section class = "section">
+<h2>Technical indicators</h2>
+<img src="assets/tech2.png" alt="Ferid" class="image" style="height: auto; width: 100%">
+
+<ul class="trend">
+    <li>Overall trend:</li>A trend is the overall direction of a market or an asset's price. In technical analysis, trends are identified by trendlines or price action that highlight when the price is making higher swing highs and higher swing lows for an uptrend, or lower swing lows and lower swing highs for a downtrend.
+    <li>Support / Resistance:</li>Support is a price level where a downtrend can be expected to pause due to a concentration of demand or buying interest. As the price of assets or securities drops, demand for the shares increases, thus forming the support line. Meanwhile, resistance zones arise due to selling interest when prices have increased.
+    <li>Stock volume:</li>Volume measures the total number of stocks traded for a given period of time. It is used as a measure of interest, which can be expressed in significant price movements. A high volume indicates significant trading activity triggering a breakout or collapse accompanied by an ongoing price trend. Breakouts lead to higher trending prices and breakdowns to lower trending prices. When the volume is small, stocks tend to crush in an area known as consolidation.
+    <li>Moving Avarage (MA):</li>The moving average (MA) is a simple technical analysis tool that smooths price data by creating a constantly updated average price. The average is determined over a certain period of time, e.g. 10 days, 20 minutes, 10 weeks or a period chosen by the trader. Moving average strategies are also popular and can be tailored to any time frame, which is suitable for both long-term investors and short-term investors. A moving average can also serve as support or resistance. In an uptrend, a 50-day, 100-day, or 200-day moving average can serve as a support level. This is because the average acts like a bottom (support) so the price bounces off it. In a downtrend, a moving average can act as resistance.
+    <li>Relative Strength Index (RSI):</li>The RSI is a momentum indicator used in technical analysis to measure the degree of price change and to assess the overbought or oversold conditions of stocks or other asset prices. RSI is shown as an oscillator (a line graph that moves between two extremes) and its value can range from 0 to 100. Traditional interpretation and usage of the RSI is that values ​​of 70 or higher indicate that a security is overbought or overvalued and may be prepared for a trend reversal or a corrective decline in price. An RSI of 30 or less indicates an oversold or undervalued condition.
+</ul>
+
+</section>
+
+
+
+
+
+
+    <div class="backbutton">
+    <a href="#blog" class="w3-button w3-light-black w3-padding-large w3-center w3-margin-bottom "  ><i class="fa fa-arrow-left w3-margin-right"></i>Go to Blog</a>
+    </div>
+
+    <div class="social">
+        <a href ="https://www.instagram.com/feridtola/?hl=de" > <i class="fa fa-instagram w3-hover-opacity w3-xxlarge w3-text-white" id = "instagram"> </i></a>
+        <a href="https://de.linkedin.com/in/ferid-tola10"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge w3-text-white" ></i></a>
+      </div>
+ <footer>
+  <div class="w3-content w3-padding-64 w3-text-white w3-small">
+    <p class="pb_font-14">&copy; 2021 <a href="https://feridtola.com/">feridtola.com</a>. All Rights Reserved. Designed by <a href="https://feridtola.com/">Ferid Tola</a></p>
+    <a href="/imprint">Imprint</a>
+    </div>
+</footer>
+
+</body>
+</html>

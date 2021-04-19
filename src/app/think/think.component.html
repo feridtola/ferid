@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/ionicons/css/ionicons.min.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/law-icons/font/flaticon.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/fonts/fontawesome/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick-theme.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/helpers.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/style.css">
+
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+</style>
+<body class="w3-black" data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+  <!--Start Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light w3-animate-right navlist-right  "  id="navbar">
+  <div class="container">
+    <a class="navbar-brand d-lg-none" href="index.html">Ferid Tola</a> <!--hier statt "index.html, eventuell Home oder #" -> beachte außerdem die nächste Zeile: aria-expanded wurde auf von false auf true gesetzt, damit navbar beim anklicken wieder zu gehet,schau dazu die methode NavBar()-->
+    <button class="navbar-toggler d-block d-sm-none"   (click)="toggleNavbar()" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> 
+    </button>
+    <div class="collapse navbar-collapse "  [ngClass]="{ 'show': navbarOpen }" id="onright">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#" (click)= " NavBar()" >Home </a></li>
+        <li class="nav-item"><a class="nav-link" href="#service" (click)= " NavBar()">Service</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog" (click)= " NavBar()">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" (click)= " NavBar()">Contact</a></li>        
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+<!--End Navbar-->
+<!--Start first section-->
+<section class="section " >
+        <h1>Think big but start small.</h1>
+        <div >
+        <p>We have been used to the fact that there is little or no interest on savings for a few years now, but now the next step is getting closer and closer: negative interest rates for everyone. In this blog I would like to show you some stocks and ETFs from my portfolio. 
+        </div>
+
+  
+        <h2>Stocks</h2>
+
+        <ul>
+            <li>Overstock.Com Inc.:</li> is an American internet retailer primarily selling furniture with headquarters in Midvale, Utah, near Salt Lake City. Overstock Inc stock rose 969% in the past 12 months, skyrocketing. In the last month alone, the stock was up 92.94%.
+            <li>Workhorse Group Inc.,</li> 001: about a year ago the stock was worth only 3€. This has increased by 985% in the last 12 months. Workhorse Group Inc is an American manufacturer of commercial vehicles and chassis. The company plans to introduce an electrically powered pickup in the future.
+            <li>PlugPower:</li> is an American company that manufactures fuel cells for applications in electromobility. Right now the stock is worth 56,88€ and has increased by 1,319% in the last 12 months.
+            <li>Apple:</li> While the upper stocks are rather unknown and represent an unsafe investment for many beginners, the Apple stock offers a comparatively higher level of security. After the split on August 31st, Apple shares became more attractive for small investors as well. Apple stock rose 54.24% in the past 8 months. On November 19, 2020, Apple paid a dividend of $ 0.20 per share to its shareholders.
+            <li>Daimler:</li> during the pandemic the Daimler share rose by 54.60% within 12 months. Daimler has also announced that it will split off the entire truck business and will in future concentrate only on automobile construction - under the old name of Merceds-Benz.
+        </ul>
+
+        <h2>ETFs</h2>
+            <ul>
+                <li>TecDAX:</li> This fund aims to track the performance of an index made up of the 30 largest technology companies listed on the Frankfurt Stock Exchange. The price of the TecDax fund rose by more than 8% in the last 12 months.
+                <li>MSCI World:</li> is a global share index that tracks the price development of around 1,600 shares from 23 industrialized countries. Germany is represented by 55 companies in the index. After the start of the pandemic, the fund is still making a loss of 31%, but has since recovered strongly and recorded an increase of 4.50% on 02/10/2021.
+                <li>Core S&P 500:</li> Consists of 500 US large capitalization companies. Price increase within 12 months: 5.1%.
+                <li>Global Clean Energy:</li>This fund is made up of the 30 largest companies active in the clean energy sector.
+                <li>Automation & Robotics:</li> This fund includes companies that generate significant income from sectors related to the development of automation and robotics. Within one year, the fund's price rose by 34.22%.
+            </ul>
+            <p>Diversification is the KEY to success. Do not invest your entire capital in a single share, but put together a meaningful combination of individual shares (high-risk) and ETFs (low-risk). Make your money your friend and make it work for you. 
+            <p>Note: this is not investment advice.</p>
+  </section>
+<!--end first section-->
+
+
+
+
+
+    <div class="backbutton">
+    <a href="#blog" class="w3-button w3-light-black w3-padding-large w3-center w3-margin-bottom "  ><i class="fa fa-arrow-left w3-margin-right"></i>Go to Blog</a>
+    </div>
+
+    <div class="social">
+        <a href ="https://www.instagram.com/feridtola/?hl=de" > <i class="fa fa-instagram w3-hover-opacity w3-xxlarge w3-text-white" id = "instagram"> </i></a>
+        <a href="https://de.linkedin.com/in/ferid-tola10"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge w3-text-white" ></i></a>
+      </div>
+ <footer>
+  <div class="w3-content w3-padding-64 w3-text-white w3-small">
+    <p class="pb_font-14">&copy; 2021 <a href="https://feridtola.com/">feridtola.com</a>. All Rights Reserved. Designed by <a href="https://feridtola.com/">Ferid Tola</a></p>
+    <a href="/imprint">Imprint</a>
+    </div>
+</footer>
+
+</body>
+</html>

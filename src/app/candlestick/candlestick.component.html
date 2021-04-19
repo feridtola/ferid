@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/ionicons/css/ionicons.min.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/law-icons/font/flaticon.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/fonts/fontawesome/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick-theme.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/helpers.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/style.css">
+
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+</style>
+<body class="w3-black" data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+  <!--Start Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light w3-animate-right navlist-right  "  id="navbar">
+  <div class="container">
+    <a class="navbar-brand d-lg-none" href="index.html">Ferid Tola</a> <!--hier statt "index.html, eventuell Home oder #" -> beachte außerdem die nächste Zeile: aria-expanded wurde auf von false auf true gesetzt, damit navbar beim anklicken wieder zu gehet,schau dazu die methode NavBar()-->
+    <button class="navbar-toggler d-block d-sm-none"   (click)="toggleNavbar()" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> 
+    </button>
+    <div class="collapse navbar-collapse "  [ngClass]="{ 'show': navbarOpen }" id="onright">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#" (click)= " NavBar()" >Home </a></li>
+        <li class="nav-item"><a class="nav-link" href="#service" (click)= " NavBar()">Service</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog" (click)= " NavBar()">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" (click)= " NavBar()">Contact</a></li>        
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+<!--End Navbar-->
+<!--Start first section-->
+<section class="section " >
+        <h1>Candlestick Pattern</h1>
+        <div class ="begin" >
+        <p>In financial technical analysis, a candlestick pattern is a movement in prices shown graphically on a candlestick chart. Candlestick patterns are used to predict the future direction of price movement. Discover 4 of the most common candlestick patterns and how you can use them to identify trading opportunities.</p>
+        Let’s dive in...
+        </div>
+
+        <h2>Bullish Candlestick Pattern</h2>
+        <p>Bullish patterns may form after a market downtrend, and signal a reversal of price movement. They are an indicator for traders to consider opening a long position to profit from any upward trajectory.</p>
+        <h5>1. Hammer</h5>
+        <img src="assets/hammer.png" alt="Ferid" class="image" style="height:200px; width: 200px;">
+        
+        <div class ="text">
+          <div class= "inner">
+            A hammer is a bullish reversal pattern that forms after a price decline. 
+        <h6>Here’s how to recognize it:</h6>
+        <ul >
+            <li>Little to no upper shadow</li>
+            <li>The price closes at the top 1⁄4 of the range.</li>
+            <li>The lower shadow is about two or three times as long as the body.</li>
+        </ul>
+        <h6>And that means a hammer:</h6>
+        <ul>
+            <li>When the market opens, the sellers take control and lower the price.</li>
+            <li>At the height of the sale, there is enormous buying pressure and pushes the price up.</li>
+            <li>The buying pressure is so strong that it closes above the opening price.</li>
+        </ul> 
+      </div>
+    </div>
+  </section>
+<!--end first section-->
+
+
+<!--second section-->
+<section class="section" >
+    <h5>2. Bullish Engulfing Pattern</h5>
+    <img src="assets/bullishengulfing.png" alt="Ferid" class="image" style="height:200px; width: 200px;">
+    
+    <div class ="text">
+      <div id = "inner">
+        A Bullish Engulfing Pattern is a (2-candle) bullish reversal candlestick pattern that forms after a decline in price.
+    <h6>Here’s how to recognize it:</h6>
+    <ul>
+        <li>The first candle has a bearish ending.</li>
+        <li>The body of the second candle completely "covers" the body of the first candle.</li>
+        <li>The second candle closes bullishly.</li>
+    </ul>
+    <h6>And this is what a bullish engulfing pattern means:</h6>
+    <ul>
+        <li>At the first candle, sellers are in control as they have closed a low price for the period.</li>
+        <li>The second candle is under strong buying pressure and therefore closes above the high of the previous candle - which shows that buyers have won the battle for the time being.</li>
+    </ul> 
+      </div>
+  </div>
+  </section>  
+<!-- end second section-->
+
+<!--thirdsection-->
+<section class="section" >
+<h2>Bearish Candlestick Pattern</h2>
+<p>Bearish candlestick patterns usually form after an uptrend, and signal a point of resistance. Heavy pessimism about the market price often causes traders to close their long positions, and open a short position to take advantage of the falling price.</p>
+<h5>1. Shooting Star </h5>
+<img src="assets/star.png" alt="Ferid" class="image" style="height:200px; width: 200px;">
+
+<div class ="text">
+  <div id = "inner">
+    A Shooting Star is a (1- candle) bearish reversal pattern that forms after an advanced in price.
+<h6>Here’s how to recognize it:</h6>
+<ul>
+    <li>Little to no lower shade.</li>
+    <li>The price closes at the bottom 1⁄4 of the range.</li>
+    <li>The upper shadow is about two or three times as long as the body.</li>
+</ul>
+<h6>And this is what a shooting star means:</h6>
+<ul>
+    <li>When the market opened, buyers took control and pushed the price up.</li>
+    <li>At the height of the purchase, there is tremendous selling pressure, pushing the price down.</li>
+    <li>The selling pressure is so strong that it closes below the opening price.</li>
+</ul> 
+  </div>
+</div>
+</section>
+<!--end third section--> 
+
+<!--start forth section--> 
+<section class="section" >
+        <h5>2. Bearish Engulfing Pattern</h5>
+        <img src="assets/bearish.png" alt="Ferid" class="image" style="height:200px; width: 200px;">
+        <div class ="text">
+          <div id = "inner">
+            A Bearish Engulfing Pattern is a (2-candle) bearish reversal candlestick pattern that forms after an advanced in price.
+        <h6>Here’s how to recognize it:</h6>
+        <ul>
+            <li>The first candle has a bullish ending.</li>
+            <li>The body of the second candle completely "covers" the body of the first candle.</li>
+            <li>The second candle closes bearishly.</li>
+        </ul>
+        <h6>And this is what a bearish engulfing pattern means:</h6>
+        <ul>
+            <li>With the first candle, buyers are in control, as they could close a higher price for the period.</li>
+            <li>There is strong selling pressure on the second candle and closes below the low of the previous candle - which shows that the sellers have won the battle for the time being.</li>
+        </ul> 
+          </div>
+        </div>
+</section>
+        <!--end forth section--> 
+    
+
+
+
+    <div class="backbutton">
+    <a href="#blog" class="w3-button w3-light-black w3-padding-large w3-center w3-margin-bottom "  ><i class="fa fa-arrow-left w3-margin-right"></i>Go to Blog</a>
+    </div>
+
+    <div class="social">
+        <a href ="https://www.instagram.com/feridtola/?hl=de" > <i class="fa fa-instagram w3-hover-opacity w3-xxlarge w3-text-white" id = "instagram"> </i></a>
+        <a href="https://de.linkedin.com/in/ferid-tola10"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge w3-text-white" ></i></a>
+      </div>
+      <footer>
+        <div class="w3-content w3-padding-64 w3-text-white w3-small">
+          <p class="pb_font-14">&copy; 2021 <a href="https://feridtola.com/">feridtola.com</a>. All Rights Reserved. Designed by <a href="https://feridtola.com/">Ferid Tola</a></p>
+          <a href="/imprint">Imprint</a>
+          </div>
+      </footer>
+
+</body>
+</html>

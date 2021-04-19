@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600|Montserrat:200,300,400" rel="stylesheet">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/bootstrap/bootstrap.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/ionicons/css/ionicons.min.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/srcassets/fonts/law-icons/font/flaticon.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/fonts/fontawesome/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/slick-theme.css">
+
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/helpers.css">
+<link rel="stylesheet" href="/Users/feridtola/Desktop/feridtola/src/assets/css/style.css">
+
+
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+
+</style>
+<body class="w3-black" data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+  <!--Start Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark pb_navbar pb_scrolled-light w3-animate-right navlist-right  "  id="navbar">
+  <div class="container">
+    <a class="navbar-brand d-lg-none" href="index.html">Ferid Tola</a> <!--hier statt "index.html, eventuell Home oder #" -> beachte außerdem die nächste Zeile: aria-expanded wurde auf von false auf true gesetzt, damit navbar beim anklicken wieder zu gehet,schau dazu die methode NavBar()-->
+    <button class="navbar-toggler d-block d-sm-none"   (click)="toggleNavbar()" type="button" data-toggle="collapse" data-target="#probootstrap-navbar" aria-controls="probootstrap-navbar" aria-expanded="true" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span> 
+    </button>
+    <div class="collapse navbar-collapse "  [ngClass]="{ 'show': navbarOpen }" id="onright">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="#" (click)= " NavBar()" >Home </a></li>
+        <li class="nav-item"><a class="nav-link" href="#service" (click)= " NavBar()">Service</a></li>
+        <li class="nav-item"><a class="nav-link" href="#blog" (click)= " NavBar()">Blog</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact" (click)= " NavBar()">Contact</a></li>        
+      </ul>
+    </div>
+    
+  </div>
+</nav>
+<!--End Navbar-->
+<!--Start first section-->
+
+<section class="section " >
+    <h1>Cathie Wood</h1>
+<div class = "begin" >
+<p > Catherine D. Wood is the founder, CEO and CIO of ARK Investment Management LLC, an investment management firm that managed the largest actively managed exchange-traded fund in 2020. Wood was named Best Stock Picker 2020 by Bloomberg News. She has four decades of investment experience in the financial industry. Her focus is exclusively on listed companies that are disruptive in their industry by being innovative through their technology and business model. She looks for companies that bring about change and have an advantage over their competitors. </p>
+</div>
+<p></p>
+<div>
+<p>ARK Investment Management LLC uses an open research process to seek and identify companies that are leading and benefiting from cross-industry innovations such as artificial intelligence, robotics, energy storage, DNA sequencing and blockchain technology.</p>
+</div>
+<div>
+<p>Below are some of the stocks in Cathie Wood's portfolio in 2020:</p>
+</div> 
+        
+          <div class= "inner">
+        <ul >
+            <li>Tesla Inc | 7,3%</li>
+            <li>Roku, Inc. Class A  | 5,4%</li>
+            <li>Teladoc Health, Inc. | 5,0%</li>
+            <li>Square, Inc. Class A | 4,2%</li>
+            <li>CRISPR Therapeutics AG | 3,6%</li>
+            <li>Pacific Biosciences of California, Inc. | 3,1%</li>
+            <li>Invitae Corp. | 3,0%</li>
+            <li>Zillow Group, Inc. Class C | 2,8%</li>
+            <li>Pure Storage, Inc. Class A | 2,6%</li>
+            <li>Twist Bioscience Corp.  | 2,1%</li>
+            <li>Exact Sciences Corporation | 1,8%</li>
+            <li>Proto Labs, Inc. | 1,8%</li>
+            <li>Proto Labs, Inc. | 1,8%</li>
+            <li>Twilio, Inc. Class A | 1,7%</li>
+            <li>PayPal Holdings Inc | 1,7%</li>
+            <li>Intellia Therapeutics, Inc. | 1,6%</li>
+            <li>Pinterest, Inc. Class A | 1,1%</li>
+            <li>Facebook, Inc. Class A | 0,4%</li>
+            <li>Apple Inc.  | 0,3%</li>
+            <li>Netflix, Inc. | 0,2%</li>
+            <li>Alphabet Inc. Class C | 0,2%</li>
+            <li>Amazon.com, Inc. | 0,2%</li>
+
+
+        </ul>
+  
+    </div>
+  </section>
+<!--end first section-->
+
+<div class="backbutton">
+    <a href="#blog" class="w3-button w3-light-black w3-padding-large w3-center w3-margin-bottom "  ><i class="fa fa-arrow-left w3-margin-right"></i>Go to Blog</a>
+    </div>
+
+    <div class="social">
+        <a href ="https://www.instagram.com/feridtola/?hl=de" > <i class="fa fa-instagram w3-hover-opacity w3-xxlarge w3-text-white" id = "instagram"> </i></a>
+        <a href="https://de.linkedin.com/in/ferid-tola10"><i class="fa fa-linkedin w3-hover-opacity w3-xxlarge w3-text-white" ></i></a>
+      </div>
+ <footer>
+  <div class="w3-content w3-padding-64 w3-text-white w3-small">
+    <p class="pb_font-14">&copy; 2021 <a href="https://feridtola.com/">feridtola.com</a>. All Rights Reserved. Designed by <a href="https://feridtola.com/">Ferid Tola</a></p>
+    <a href="/imprint">Imprint</a>
+    </div>
+</footer>
+
+</body>
+</html>
