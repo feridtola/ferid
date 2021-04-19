@@ -58,7 +58,7 @@ body{
 
  
   .ca3-scroll-down-arrow {
-    background-image: url(/feridtola/src/assets/arrowicon.png);
+    background-image: url(/arrowicon.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-color: rgba(247, 247, 247, 0.728);
