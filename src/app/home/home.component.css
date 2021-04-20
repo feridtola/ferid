@@ -263,6 +263,22 @@ body{
       object-fit:fill;
   }
 
+  #consult{
+  border-radius: 9px;
+  border: 2px solid rgb(240, 238, 238);
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+  text-align: center;
+  background-color: rgb(87, 87, 84);
+  }
+
+  .consulation{
+    left: 50%;
+    text-align: center;
+    
+  }
+
 
 
 
