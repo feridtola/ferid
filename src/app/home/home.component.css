@@ -57,7 +57,7 @@ body{
   }
   
   .ca3-scroll-down-arrow {
-    background: url("/assets/arrowicon.png");
+    background-image: url("/assets/arrowicon.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-color: rgba(247, 247, 247, 0.728);
