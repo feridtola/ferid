@@ -52,4 +52,67 @@ export class AppComponent {
     );
   }
 
+  async getLazybreakout() {
+    this.viewContainerRef.clear();
+    const { BreakoutComponent } = await import('./breakout/breakout.component');
+    this.viewContainerRef.createComponent(
+      this.cfr.resolveComponentFactory(BreakoutComponent)
+    );
+  }
+
+  async getLazyCandlestick() {
+    this.viewContainerRef.clear();
+    const { CandlestickComponent } = await import('./candlestick/candlestick.component');
+    this.viewContainerRef.createComponent(
+      this.cfr.resolveComponentFactory(CandlestickComponent)
+    );
+  }
+
+  async getLazyCapm() {
+    this.viewContainerRef.clear();
+    const { CapmComponent } = await import('./capm/capm.component');
+    this.viewContainerRef.createComponent(
+      this.cfr.resolveComponentFactory(CapmComponent)
+    );
+  }
+
+  async getLazyCathie() {
+    this.viewContainerRef.clear();
+    const { CathieComponent } = await import('./cathie/cathie.component');
+    this.viewContainerRef.createComponent(
+      this.cfr.resolveComponentFactory(CathieComponent)
+    );
+  }
+
+  async getLazyFundamental() {
+    this.viewContainerRef.clear();
+    const { FundamentalComponent } = await import('./fundamental/fundamental.component');
+    this.viewContainerRef.createComponent(
+      this.cfr.resolveComponentFactory(FundamentalComponent)
+    );
+  }
+
+  async getLazySwing() {
+    this.viewContainerRef.clear();
+    const { SwingComponent } = await import('./swing/swing.component');
+    this.viewContainerRef.createComponent(
+      this.cfr.resolveComponentFactory(SwingComponent)
+    );
+  }
+
+  async getLazyTechnical() {
+    this.viewContainerRef.clear();
+    const { TechnicalComponent } = await import('./technical/technical.component');
+    this.viewContainerRef.createComponent(
+      this.cfr.resolveComponentFactory(TechnicalComponent)
+    );
+  }
+
+  async getLazyThink() {
+    this.viewContainerRef.clear();
+    const { ThinkComponent } = await import('./think/think.component');
+    this.viewContainerRef.createComponent(
+      this.cfr.resolveComponentFactory(ThinkComponent)
+    );
+  }
 }
