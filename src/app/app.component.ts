@@ -44,6 +44,13 @@ export class AppComponent {
 
 
   //Lazy Loading
+  async getLazyPhotos() {
+    this.viewContainerRef.clear();
+    const { HomeComponent } = await import('./home/home.component');
+    this.viewContainerRef.createComponent(
+      this.cfr.resolveComponentFactory(HomeComponent)
+    );
+  }
 
   async getLazybreakout() {
     this.viewContainerRef.clear();
