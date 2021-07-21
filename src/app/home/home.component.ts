@@ -35,9 +35,8 @@ export class HomeComponent implements OnInit {
       showCursor: true,
     };
   var typed =  new Typed('.typed', options);
-
   }
-
+  
   //hide navbar on scroll
   navbarOpen = false;
   prevScrollpos = window.pageYOffset;
@@ -50,9 +49,9 @@ export class HomeComponent implements OnInit {
         window.document.getElementById('navbar')!.style.top = "-50px";
       }
       this.prevScrollpos = currentScrollPos;
-    } 
-
-  //open navbar -> cklicking icon  
+    }  
+  
+  //open navbar -> cklick the icon  
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
@@ -64,13 +63,6 @@ export class HomeComponent implements OnInit {
         element.click();
     }
 }
-
-
-
-
-
-
-
 
   candlestick() {
     this._router.navigateByUrl('/candlestick');
