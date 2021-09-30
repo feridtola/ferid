@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
      // Typed headline
      var options = {
-      strings: ['',' freelancer, photographer', ' trader and trading <a class="link" href="#blog">blogger</a> from Munich.'],
+      strings: ['', ' Master´s student, photographer', ' trader and trading <a class="link" href="#blog">blogger</a> from Munich.'],
       backDelay: 1000,
       backSpeed: 20,
       typeSpeed: 50,
@@ -51,7 +51,7 @@ export class HomeComponent implements OnInit {
       this.prevScrollpos = currentScrollPos;
     }  
   
-  //open navbar -> cklick the icon  
+  //open navbar  
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
