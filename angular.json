@@ -27,19 +27,16 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [              
+            "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/bootstrap/dist/css/bootstrap.css",
               "src/styles.css"
-            
-              
-              
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
               "node_modules/tether/dist/js/tether.js",
               "node_modules/jquery/dist/jquery.js",
-              "node_modules/bootstrap/dist/js/bootstrap.js",
+              "node_modules/bootstrap/dist/js/bootstrap.js"
             ]
           },
           "configurations": {
@@ -258,5 +255,8 @@
       }
     }
   },
-  "defaultProject": "feridtola"
+  "defaultProject": "feridtola",
+  "cli": {
+    "analytics": "616eb96b-a192-4ca8-a47a-1ad8079de2f0"
+  }
 }
