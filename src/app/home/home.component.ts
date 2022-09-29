@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
      // Typed headline
      var options = {
       strings: ['', ' and Master´s student from Munich.'],
-      backDelay: 1000,
+      backDelay: 10,
       backSpeed: 20,
       typeSpeed: 50,
       showCursor: true,
