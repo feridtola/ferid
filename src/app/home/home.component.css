@@ -141,7 +141,9 @@ body{
  
 #img{
   left: 50%;
-  opacity: 0.5;
+  opacity: 1;
+  border-color: black;
+  border-radius: 30px;
 }
 
   #home {

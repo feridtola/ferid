@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
      // Typed headline
      var options = {
-      strings: ['', ' Master´s student, photographer', ' trader and trading <a class="link" href="#blog">blogger</a> from Munich.'],
+      strings: ['', ' and Master´s student from Munich.'],
       backDelay: 1000,
       backSpeed: 20,
       typeSpeed: 50,
