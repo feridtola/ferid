@@ -141,6 +141,7 @@ body{
  
 #img{
   left: 50%;
+  top: auto;
   opacity: 1;
   border-color: black;
   border-radius: 30px;
