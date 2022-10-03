@@ -29,10 +29,10 @@ export class HomeComponent implements OnInit {
      // Typed headline
      var options = {
       strings: ['', ' and Master´s student from Munich.'],
-      backDelay: 10,
-      backSpeed: 20,
-      typeSpeed: 50,
-      showCursor: true,
+      backDelay: 0,
+      backSpeed: 0,
+      typeSpeed: 70,
+      showCursor: false,
     };
   var typed =  new Typed('.typed', options);
   }

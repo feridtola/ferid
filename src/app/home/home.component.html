@@ -46,7 +46,8 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="collapse navbar-collapse"  [ngClass]="{ 'show': navbarOpen }" id="onright">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active" id = "linksNav"><a class="nav-link" href="#" (click)= " NavBar()" >Home </a></li>
-        <li class="nav-item active" id = "linksNav"><a class="nav-link" href="#service" (click)= " NavBar()">Service</a></li>       
+        <li class="nav-item active" id = "linksNav"><a class="nav-link" href="#service" (click)= " NavBar()">Service</a></li>    
+        <li class="nav-item active" id = "linksNav"><a class="nav-link" href="#blog" (click)= " NavBar()">Blog</a></li>          
         <li class="nav-item active" id = "linksNav"><a class="nav-link" href="#contact" (click)= " NavBar()">Contact</a></li>        
       </ul>
     </div>
@@ -77,8 +78,19 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <div class="fade-in">
    <img id = "img" src="assets/profile.jpg" alt="ferid tola" class="w3-image" width="300" height="300"> </div>
   </header>
-  <div id= "arrow"  >
-  <a class="ca3-scroll-down-link ca3-scroll-down-arrow"  data-ca3_iconfont="ETmodules" data-ca3_icon="" href="#service"></a>
+
+  <div id= "arrow" >
+  <a class="ca3-scroll-down-link ca3-scroll-down-arrow"  data-ca3_iconfont="ETmodules" data-ca3_icon="" href="#profesional"></a>
+</div>
+
+
+ <!-- Contact Section -->
+ <div class="w3-padding-64 w3-content w3-text-grey" id="profesional">
+  <h5 class="w3-text-light-grey"> Hi, I am a freelancer in the field of information technology and would like to give you an overview of my services and professional experience. I am currently working on a consulting project at the largest pharmaceutical company in the world, Roche GmbH in collaboration with GULP Consulting GmbH. 
+    I also have a strong passion for finance and investing and love to share my knowledge with my readers on my blog. You can find my services and blog below.
+  </h5>
+  <hr style=" color: rgb(192, 186, 184); height: 2px;  width:200px" class="w3-opacity"  > 
+<!-- End Contact Section -->
 </div>
 
   <!-- Service Section -->
@@ -137,7 +149,10 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     </button>
   </a>
   <!-- End Service Section -->
+  <hr style=" color: rgb(192, 186, 184); height: 2px;  width:200px" class="w3-opacity"  > 
+
   </div>
+  
   
 <!--Start Partner Section-->
 
@@ -156,6 +171,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         <h3 style="color:rgb(255, 255, 255);font-size:20px;" ></h3>
       </div>
     </div>
+    <hr style=" color: rgb(192, 186, 184); height: 2px;  width:200px" class="w3-opacity"  > 
 
   </div>
 <!--End Partner Section-->
@@ -163,7 +179,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 
   <!-- Blog Section -->
 
-  <!--
+  
   <div class="w3-padding-64 w3-content " id="blog">
     <h2 class="w3-text w3-center" style="color:rgb(255, 255, 255);font-size:40px;">Blog</h2>
     <hr class="w3-opacity w3-center" style=" color: rgb(198, 132, 112); height: 2px;  width:100%">
@@ -199,13 +215,14 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
       <p><button class="w3-button w3-black-grey w3-block"  (click)="technical()"id="button">Read more</button></p>
     </div>
   </div>
+  <hr style=" color: rgb(192, 186, 184); height: 2px;  width:200px" class="w3-opacity"  > 
 
   
     
 
 
   </div>
--->
+
   <!-- End Blog Section -->
 
   <!-- 
