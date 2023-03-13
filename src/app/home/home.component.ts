@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
      // Typed headline
      var options = {
-      strings: ['', ' Inormation Technologie Consultant from Munich.'],
+      strings: ['', ' Information Technologie Consultant from Munich.'],
       backDelay: 0,
       backSpeed: 0,
       typeSpeed: 70,
@@ -50,12 +50,10 @@ export class HomeComponent implements OnInit {
       }
       this.prevScrollpos = currentScrollPos;
     }  
-  
   //open navbar  
   toggleNavbar() {
     this.navbarOpen = !this.navbarOpen;
   }
-
   //Close navbar after cklicing the link
   NavBar () {
     let element: HTMLElement = document.getElementsByClassName( 'navbar-toggler' )[ 0 ] as HTMLElement;
