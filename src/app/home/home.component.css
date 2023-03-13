@@ -186,6 +186,13 @@ body{
   text-align: center;
 }
 
+#profesional{
+  text-align: justify;
+  text-justify:inter-ideograph ;
+  hyphens: auto;
+
+}
+
 #student {
   font-family: "Courier New", cursive;
   font-size: large;
