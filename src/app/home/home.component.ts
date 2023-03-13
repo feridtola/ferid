@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
      // Typed headline
      var options = {
-      strings: ['', ' and Master´s student from Munich.'],
+      strings: ['', ' Inormation Technologie Consultant from Munich.'],
       backDelay: 0,
       backSpeed: 0,
       typeSpeed: 70,
